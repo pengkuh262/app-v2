@@ -13,7 +13,7 @@
     "node": "18.9.0",
     "npm": "8.19.1"
   },
-  "cacheDirectories": [".next/cache"],
+  "cacheDirectories": {".next/cache"},
   "dependencies": {
     "bootstrap": "^5.2.2",
     "next": "13.0.0",
