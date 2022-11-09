@@ -3,7 +3,6 @@ import ContactUs from "./components/contactUs";
 import NavbarIndex from "./components/navbarIndex";
 import Outro from "./components/outro";
 import Image from "next/image";
-import Salamun from "../public/logo_salamun.png";
 import Webdev from "../public/i24.png";
 import Server from "../public/i23.png";
 import Desktop from "../public/i22.png";

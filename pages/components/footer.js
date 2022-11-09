@@ -1,4 +1,3 @@
-import React from "react";
 import Salamun from "/public/logo_salamun.png";
 import Image from "next/image";
 
