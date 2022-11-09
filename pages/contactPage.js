@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import Footer from "./components/Footer";
+import Footer from "../pages/components/footer";
 import NavbarIndex from "./components/navbarIndex";
 
 const contactPage = () => {

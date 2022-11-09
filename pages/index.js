@@ -24,7 +24,7 @@ import Mysql from "../public/tech/31.png";
 import Elephant from "../public/tech/32.png";
 import Web3 from "../public/tech/37.png";
 import Aws from "../public/tech/38.png";
-import Footer from "./components/Footer";
+import Footer from "../pages/components/footer";
 
 export default function Home() {
   return (
