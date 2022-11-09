@@ -10,7 +10,7 @@ const NavbarIndex = () => {
     <>
       <div className="top-0 fixed bg-white w-full mx-auto">
         {/* Navigation bar */}
-        <div className=" flex mx-auto justify-between my-[18px] ml-[15px] mr-[15px] lg:ml-[139px] lg:mr-[139px]">
+        <div className=" flex mx-auto bg-white justify-between my-[18px] ml-[15px] mr-[15px] lg:ml-[139px] lg:mr-[139px]">
           <div>
             <Image
               className="w-[105px] md:w-full"
