@@ -1,23 +1,21 @@
 import Head from "next/head";
 import React from "react";
 import ContactUs from "./contactUs";
+import Image from "next/image";
+import Group8 from "../components/img/Group8.png";
+import Rectangle47 from "../components/img/Rectangle47.png";
+import Rectangle48 from "../components/img/Rectangle48.png";
 
 const Outro = () => {
   return (
     <>
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap"
-          rel="stylesheet"
-        ></link>
-      </Head>
       <div>
         <div className="bg-orange-500 rounded-full font-normal mx-8 md:mx-24 xl:mx-[272px] ">
           <div className="flex justify-between ">
-            <img className="w-16 h-auto" src="/img/Group8.png" alt="" />
+            <Image className="w-16 h-auto" src={Group8} alt="" />
             <div className="flex h-[21px] gap-x-[5.41px]">
-              <img src="/img/Rectangle47.png" alt="" />
-              <img src="/img/Rectangle48.png" alt="" />
+              <Image src={Rectangle47} alt="" />
+              <Image src={Rectangle48} alt="" />
             </div>
           </div>
           <h1 className="text-xs md:text-lg lg:text-2xl xl:text-4xl text-white text-center pb-2 font-normal">
@@ -27,8 +25,8 @@ const Outro = () => {
           </h1>
           <div className="flex justify-between">
             <div className="flex h-[21px] mt-6 gap-x-[5.41px]">
-              <img src="/img/Rectangle48.png" alt="" />
-              <img src="/img/Rectangle47.png" alt="" />
+              <Image src={Rectangle48} alt="" />
+              <Image src={Rectangle47} alt="" />
             </div>
             <div>
               <ContactUs />
