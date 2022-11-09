@@ -22,7 +22,7 @@ const NavbarIndex = () => {
             <div className="hidden md:block md:flex">
               <ul className=" mx-5 py-5 ">
                 <li>
-                  <Link className="hover:text-blue-300" href="#service">
+                  <Link className="hover:text-blue-300" href="/#service">
                     Service
                   </Link>
                 </li>
@@ -31,7 +31,7 @@ const NavbarIndex = () => {
                 <li>
                   <Link
                     className="hover:text-blue-300 scroll-smooth"
-                    href="#teams"
+                    href="/#teams"
                   >
                     Teams
                   </Link>
@@ -39,7 +39,7 @@ const NavbarIndex = () => {
               </ul>
               <ul className="mx-5 py-3">
                 <li>
-                  <Link className="" href="">
+                  <Link className="" href="/contactPage">
                     <Contact />
                   </Link>
                 </li>
