@@ -2,6 +2,28 @@ import Head from "next/head";
 import ContactUs from "./components/contactUs";
 import NavbarIndex from "./components/navbarIndex";
 import Outro from "./components/outro";
+import Image from "next/image";
+import Webdev from "../public/i24.png";
+import Server from "../public/i23.png";
+import Desktop from "../public/i22.png";
+import Mobile from "../public/i26.png";
+import Team from "../public/kangFaerul.png";
+import Linkedin from "../public/icon/ico-linkedin.svg";
+import Github from "../public/icon/ico-github.svg";
+import Youtube from "../public/icon/ico-youtube.svg";
+import Php from "../public/tech/26.png";
+import Node from "../public/tech/27.png";
+import Go from "../public/tech/28.png";
+import Reactjs from "../public/tech/29.png";
+import Vue from "../public/tech/29.png";
+import MongoDB from "../public/tech/33.png";
+import Db from "../public/tech/34.png";
+import Kotlin from "../public/tech/35.png";
+import Swift from "../public/tech/36.png";
+import Mysql from "../public/tech/31.png";
+import Elephant from "../public/tech/32.png";
+import Web3 from "../public/tech/37.png";
+import Aws from "../public/tech/38.png";
 
 export default function Home() {
   return (
@@ -48,9 +70,9 @@ export default function Home() {
           </p>
           <div className="bg-transparent grid grid-rows-4 md:grid-rows-4 lg:grid-rows-4 xl:grid-rows-2 mt-28 grid-flow-col">
             <div className="bg-transparent overflow-hidden mx-auto md:mx-auto lg:mx-auto xl:ml-36 text-gray-50 xl:mt-[-4rem]">
-              <img
+              <Image
                 className=" mb-[-5rem] w-24 ml-10 md:w-48 md:ml-[5rem] md:mb-[-6rem]"
-                src="/i24.png"
+                src={Webdev}
                 alt="webdev"
               />
               <div className=" shadow2 px-3 py-2 m-12 w-[212px] mb-[14px] mr-2 md:px-6 md:py-4 bg-biru md:ml-24 md:w-[424px] md:mb-7 md:mr-4 rounded-2xl">
@@ -67,9 +89,9 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-transparent overflow-hidden mx-auto md:mx-auto lg:mx-auto xl:ml-36 text-gray-50 xl:mt-[-4rem]">
-              <img
+              <Image
                 className="mb-[-5rem] w-24 ml-10 md:mb-[-6rem] md:w-48 md:ml-[5rem]"
-                src="/i23.png"
+                src={Server}
                 alt="webdev"
               />
               <div className=" shadow2 px-3 py-2 m-12 w-[212px] mb-[14px] mr-2 md:px-6 md:py-4 bg-biru md:ml-24 md:w-[424px] md:mb-7 md:mr-4 rounded-2xl">
@@ -87,9 +109,9 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-transparent overflow-hidden mx-auto md:mx-auto lg:mx-auto xl:mr-36 text-gray-50 xl:mt-[-4rem] xl:mt-24">
-              <img
+              <Image
                 className="mb-[-5rem] w-24 ml-10 md:mb-[-6rem] md:w-48 md:ml-[5rem]"
-                src="/i22.png"
+                src={Desktop}
                 alt="webdev"
               />
               <div className=" shadow2 px-3 py-2 m-12 w-[212px] mb-[14px] mr-2 md:px-6 md:py-4 bg-biru md:ml-24 md:w-[424px] md:mb-7 md:mr-4 rounded-2xl">
@@ -106,9 +128,9 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-transparent overflow-hidden mx-auto md:mx-auto lg:mx-auto xl:mr-36 text-gray-50 xl:mt-[-4rem] xl:mt-24">
-              <img
+              <Image
                 className="mb-[-5rem] w-24 ml-10 md:mb-[-6rem] md:w-48 md:ml-[5rem]"
-                src="/i26.png"
+                src={Mobile}
                 alt="webdev"
               />
               <div className=" shadow2 px-3 py-2 m-12 w-[212px] mb-[14px] mr-2 md:px-6 md:py-4 bg-biru md:ml-24 md:w-[424px] md:mb-7 md:mr-4 rounded-2xl">
@@ -146,9 +168,9 @@ export default function Home() {
               <div className=" xl:mx-52 md:mx-24">
                 <div className="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 grid-cols-2 gap-0 flex justify-items-center">
                   <div className="w-[106px] h-[165px] lg:w-[200px] lg:h-[330px] rounded overflow-hidden shadow3">
-                    <img
+                    <Image
                       className=" w-[87px] lg:w-[164px] mx-auto my-[6px] lg:my-3"
-                      src="kangFaerul.png"
+                      src={Team}
                       alt="Sunset in the mountains"
                     />
                     <div className="px-1 py-1 lg:px-6 lg:py-4">
@@ -160,26 +182,26 @@ export default function Home() {
                       </h1>
                       <div className="px-5 pt-1 lg:px-6 lg:pt-3 gap-x-2 flex pb-2">
                         <a href="">
-                          <img
-                            className="w-[15px]"
-                            src="icon/ico-linkedin.svg"
+                          <Image
+                            className="w-[15px] md:w-[30px]"
+                            src={Linkedin}
                             alt=""
                           />
                         </a>
-                        <a href="" className="w-[15px]">
-                          <img src="icon/ico-github.svg" alt="" />
+                        <a href="" className="w-[15px] md:w-[30px]">
+                          <Image src={Github} alt="" />
                         </a>
-                        <a href="" className="w-[15px]">
-                          <img src="icon/ico-youtube.svg" alt="" />
+                        <a href="" className="w-[15px] md:w-[30px]">
+                          <Image src={Youtube} alt="" />
                         </a>
                       </div>
                     </div>
                   </div>
                   <div className="w-[106px] h-[165px] lg:w-[200px] lg:h-[330px] rounded overflow-hidden shadow3">
-                    <img
+                    <Image
                       className=" w-[87px] lg:w-[164px] mx-auto my-[6px] lg:my-3"
-                      src="kangFaerul.png"
-                      alt="Sunset in the mountains"
+                      src={Team}
+                      alt=""
                     />
                     <div className="px-1 py-1 lg:px-6 lg:py-4">
                       <div className="font-bold text-[12px] lg:text-xl lg:mb-2">
@@ -190,25 +212,25 @@ export default function Home() {
                       </h1>
                       <div className="px-5 pt-1 lg:px-6 lg:pt-3 gap-x-2 flex pb-2">
                         <a href="">
-                          <img
-                            className="w-[15px]"
-                            src="icon/ico-linkedin.svg"
+                          <Image
+                            className="w-[15px] md:w-[30px]"
+                            src={Linkedin}
                             alt=""
                           />
                         </a>
-                        <a href="" className="w-[15px]">
-                          <img src="icon/ico-github.svg" alt="" />
+                        <a href="" className="w-[15px] md:w-[30px]">
+                          <Image src={Github} alt="" />
                         </a>
-                        <a href="" className="w-[15px]">
-                          <img src="icon/ico-youtube.svg" alt="" />
+                        <a href="" className="w-[15px] md:w-[30px]">
+                          <Image src={Youtube} alt="" />
                         </a>
                       </div>
                     </div>
                   </div>
                   <div className="w-[106px] h-[165px] lg:w-[200px] lg:h-[330px] mt-8 md:mt-0 rounded overflow-hidden shadow3">
-                    <img
+                    <Image
                       className=" w-[87px] lg:w-[164px] mx-auto my-[6px] lg:my-3"
-                      src="kangFaerul.png"
+                      src={Team}
                       alt="Sunset in the mountains"
                     />
                     <div className="px-1 py-1 lg:px-6 lg:py-4">
@@ -220,25 +242,25 @@ export default function Home() {
                       </h1>
                       <div className="px-5 pt-1 lg:px-6 lg:pt-3 gap-x-2 flex pb-2">
                         <a href="">
-                          <img
-                            className="w-[15px]"
-                            src="icon/ico-linkedin.svg"
+                          <Image
+                            className="w-[15px] md:w-[30px]"
+                            src={Linkedin}
                             alt=""
                           />
                         </a>
-                        <a href="" className="w-[15px]">
-                          <img src="icon/ico-github.svg" alt="" />
+                        <a href="" className="w-[15px] md:w-[30px]">
+                          <Image src={Github} alt="" />
                         </a>
-                        <a href="" className="w-[15px]">
-                          <img src="icon/ico-youtube.svg" alt="" />
+                        <a href="" className="w-[15px] md:w-[30px]">
+                          <Image src={Youtube} alt="" />
                         </a>
                       </div>
                     </div>
                   </div>
                   <div className="w-[106px] h-[165px] lg:w-[200px] lg:h-[330px] mt-8 md:mt-0 rounded overflow-hidden shadow3">
-                    <img
+                    <Image
                       className=" w-[87px] lg:w-[164px] mx-auto my-[6px] lg:my-3"
-                      src="kangFaerul.png"
+                      src={Team}
                       alt="Sunset in the mountains"
                     />
                     <div className="px-1 py-1 lg:px-6 lg:py-4">
@@ -250,17 +272,17 @@ export default function Home() {
                       </h1>
                       <div className="px-5 pt-1 lg:px-6 lg:pt-3 gap-x-2 flex pb-2">
                         <a href="">
-                          <img
-                            className="w-[15px]"
-                            src="icon/ico-linkedin.svg"
+                          <Image
+                            className="w-[15px] md:w-[30px]"
+                            src={Linkedin}
                             alt=""
                           />
                         </a>
-                        <a href="" className="w-[15px]">
-                          <img src="icon/ico-github.svg" alt="" />
+                        <a href="" className="w-[15px] md:w-[30px]">
+                          <Image src={Github} alt="" />
                         </a>
-                        <a href="" className="w-[15px]">
-                          <img src="icon/ico-youtube.svg" alt="" />
+                        <a href="" className="w-[15px] md:w-[30px]">
+                          <Image src={Youtube} alt="" />
                         </a>
                       </div>
                     </div>
@@ -284,97 +306,97 @@ export default function Home() {
             </h1>
             <div className="grid grid-flow-col auto-cols-max items-center justify-center gap-x-[11px]">
               <div>
-                <img
+                <Image
                   className="w-[63px] md:w-[103px] lg:w-full h-auto"
-                  src="tech/26.png"
+                  src={Php}
                   alt=""
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="w-[63px] md:w-[103px] lg:w-full h-auto"
-                  src="tech/27.png"
+                  src={Node}
                   alt=""
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="w-[50px] md:w-[90px] lg:w-full h-auto"
-                  src="tech/28.png"
+                  src={Go}
                   alt=""
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="w-[35px] md:w-[75px] lg:w-full h-auto"
-                  src="tech/29.png"
+                  src={Reactjs}
                   alt=""
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="w-[22px] md:w-[62px] lg:w-full h-auto"
-                  src="tech/30.png"
+                  src={Vue}
                   alt=""
                 />
               </div>
             </div>
             <div className="grid grid-flow-col auto-cols-max items-center justify-center gap-x-[11px] md:gap-x-11">
               <div>
-                <img
+                <Image
                   className="w-[63px] md:w-[103px] lg:w-full h-auto"
-                  src="tech/33.png"
+                  src={MongoDB}
                   alt=""
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="w-[32px] md:w-[52px] lg:w-full h-auto"
-                  src="tech/34.png"
+                  src={Db}
                   alt=""
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="w-[62px] md:w-[82px] lg:w-full h-auto"
-                  src="tech/35.png"
+                  src={Kotlin}
                   alt=""
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="w-[62px] md:w-[82px] lg:w-full h-auto"
-                  src="tech/36.png"
+                  src={Swift}
                   alt=""
                 />
               </div>
             </div>
             <div className="grid grid-flow-col auto-cols-max items-center justify-center gap-x-[4px] md:gap-x-10">
               <div>
-                <img
+                <Image
                   className="w-[62px] md:w-[82px] lg:w-full h-auto"
-                  src="tech/31.png"
+                  src={Mysql}
                   alt=""
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="w-[62px] md:w-[82px] lg:w-full h-auto"
-                  src="tech/32.png"
+                  src={Elephant}
                   alt=""
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="w-[63px] md:w-[83px] lg:w-full h-auto"
-                  src="tech/37.png"
+                  src={Web3}
                   alt=""
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="w-[38px] lg:w-full h-auto ml-7"
-                  src="tech/38.png"
+                  src={Aws}
                   alt=""
                 />
               </div>
