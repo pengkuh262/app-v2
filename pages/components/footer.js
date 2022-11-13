@@ -19,13 +19,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div class="flex items-center justify-center text-gray-700 p-4">
-          © 2022 Copyright
+        <div class="flex items-center justify-center gap-4 text-gray-700 p-4">
           <a class="text-gray-500" href="">
+            © 2022 Copyright
             <span> PT Salamun Teknologi Indonesia.</span>
           </a>
           <a href="">
-            <Image className="ml-14" src={Insta} />
+            <Image className="" src={Insta} />
           </a>
         </div>
       </footer>
