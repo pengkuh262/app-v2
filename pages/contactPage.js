@@ -14,13 +14,13 @@ const contactPage = () => {
         ></link>
       </Head>
       <NavbarIndex />
-      <div className=" mt-32">
+      <div className="mt-32 px-8">
         <h1 className="text-center text-2xl font-bold">Drop Us Line</h1>
         <p className="text-center text-gray-500">
           Reach out to us from our contact form and we will get back to you
           shortly.
         </p>
-        <form class="w-full mt-8 mx-auto max-w-lg">
+        <form class="w-full mt-8 mx-auto max-w-sm md:max-w-lg">
           <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <input

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 
 const NavbarIndex = () => {
+  const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
       <div className="top-0 fixed bg-white w-full mx-auto">
@@ -50,19 +51,24 @@ const NavbarIndex = () => {
             <div className="flex md:hidden ">
               <button
                 className=" text-[28px] relative flex justify-center items-center group"
-                type=" button"
+                onClick={() => setNavbarOpen(!navbarOpen)}
               >
                 <FaBars />
-                <div className="absolute hidden top-full group-focus:block min-w-full w-max bg-white shadow-md mr-16 mt-1 rounded">
+                <div
+                  className={
+                    "absolute top-full group-focus:block min-w-full w-max bg-white shadow-md mr-16 mt-1 rounded" +
+                    (navbarOpen ? " block" : " hidden")
+                  }
+                >
                   <ul className="text-left border font-normal text-sm rounded">
-                    <li className="p-4 py-1 hover:bg-gray-100 border-b">
-                      <Link href="#service">Service</Link>
+                    <li className="p-4 py-1 hover:bg-gray-100 border-b ">
+                      <a href="/#service">Service</a>
                     </li>
                     <li className="p-4 py-1 hover:bg-gray-100 border-b">
-                      <Link href="#teams">Teams</Link>
+                      <a href="/#teams">Teams</a>
                     </li>
                     <li className="p-4 py-1 hover:bg-gray-100 border-b">
-                      <Link href="">Contact Us!</Link>
+                      <a href="/contactPage">Contact Us!</a>
                     </li>
                   </ul>
                 </div>
