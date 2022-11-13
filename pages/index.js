@@ -28,6 +28,7 @@ import Footer from "../pages/components/footer";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -49,13 +50,15 @@ export default function Home() {
       {/* Intro */}
       <section id="intro" className="mt-[125px] md:mt-[183px] mx-auto">
         <div>
-          <h1 className="ml-8 text-xl tracking-wider md:text-3xl md:tracking-wide md:ml-10 md:mt-[-25px] md:ml-28 lg:ml-[139px] md:tracking-widest lg:mt-0 lg:leading-[50px] lg:text-4xl font-semibold">
+          <h1 className="ml-8 text-xl tracking-wider md:text-3xl md:tracking-wide md:mt-[-25px] md:ml-28 lg:ml-[139px] md:tracking-widest lg:mt-0 lg:leading-[50px] lg:text-4xl font-semibold">
             A Software House <br />
             Specializing in Application <br />
             Development
           </h1>
-          <div className=" flex">
-            <ContactUs />
+          <div className="ml-8 mt-6 md:ml-28 lg:ml-[139px]">
+            <Link href="/contactPage">
+              <ContactUs />
+            </Link>
           </div>
         </div>
         <br />
@@ -329,16 +332,16 @@ export default function Home() {
       {/* Tutup Tech */}
 
       {/* Maps */}
-      <section className="">
+      <section>
         <div className="container mx-auto pb-11 pt-10">
           <div className="px-8 container grid grid-cols-2 mb-16 ">
-            <div className="flex w-[380px] md:w-full h-[400px] shadow-xl justify-center col-span-2 md:col-span-1 mx-auto ">
+            <div className="flex w-[280px] md:w-full h-[350px] shadow-xl justify-center col-span-2 md:col-span-1 mx-auto ">
               <iframe
-                className="w-full "
+                className="w-full"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.498424594971!2d107.64474461546196!3d-6.95038076997705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68dd950cc15259%3A0xf5a14138db1906d6!2sPT%20Salamun%20Teknologi%20Indonesia!5e0!3m2!1sid!2sid!4v1664611387561!5m2!1sid!2sid"
               ></iframe>
             </div>
-            <div class="flex w-[380px] md:w-full h-[400px] shadow-xl justify-center col-span-2 md:col-span-1 mx-auto items-center bg-gray-50">
+            <div class="flex w-[280px] md:w-full h-[350px] shadow-xl justify-center col-span-2 md:col-span-1 mx-auto items-center bg-gray-50">
               <div class="">
                 <div class="flex">
                   <div className="mr-4">

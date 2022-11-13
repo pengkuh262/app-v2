@@ -5,6 +5,7 @@ import Image from "next/image";
 import Group8 from "../components/img/Group8.png";
 import Rectangle47 from "../components/img/Rectangle47.png";
 import Rectangle48 from "../components/img/Rectangle48.png";
+import Link from "next/link";
 
 const Outro = () => {
   return (
@@ -29,7 +30,9 @@ const Outro = () => {
               <Image src={Rectangle47} alt="" />
             </div>
             <div>
-              <ContactUs />
+              <Link href="/contactPage">
+                <ContactUs />
+              </Link>
             </div>
           </div>
         </div>

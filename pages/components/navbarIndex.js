@@ -12,11 +12,13 @@ const NavbarIndex = () => {
         {/* Navigation bar */}
         <div className=" flex mx-auto bg-white justify-between my-[18px] ml-[15px] mr-[15px] lg:ml-[139px] lg:mr-[139px]">
           <div>
-            <Image
-              className="w-[105px] md:w-full"
-              src={Salamun}
-              alt="logo_salamun"
-            />
+            <Link href="/">
+              <Image
+                className="w-[105px] md:w-full"
+                src={Salamun}
+                alt="logo_salamun"
+              />
+            </Link>
           </div>
           <div className=" font-semibold text-gray-600">
             <div className="hidden md:block md:flex">
@@ -39,7 +41,7 @@ const NavbarIndex = () => {
               </ul>
               <ul className="mx-5 py-3">
                 <li>
-                  <Link className="" href="/contactPage">
+                  <Link href="/contactPage">
                     <Contact />
                   </Link>
                 </li>
